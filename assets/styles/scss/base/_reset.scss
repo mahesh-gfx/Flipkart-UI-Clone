@@ -88,6 +88,7 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -116,62 +117,23 @@ q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
-  content: "";
-  content: none;
+blockquote {
+  &:before,
+  &:after {
+    content: "";
+    content: none;
+  }
 }
 
-q:before, q:after {
-  content: "";
-  content: none;
+q {
+  &:before,
+  &:after {
+    content: "";
+    content: none;
+  }
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-.btn-1 {
-  border-radius: 2px;
-  height: 32px;
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 5px 40px;
-}
-
-.btn-2 {
-  border-radius: 2px;
-  height: 32px;
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 5px 40px;
-}
-
-.btn-3 {
-  border-radius: 2px;
-  height: 32px;
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
-}
-
-body {
-  font-size: 12px;
-}
-
-/*# sourceMappingURL=main.css.map */

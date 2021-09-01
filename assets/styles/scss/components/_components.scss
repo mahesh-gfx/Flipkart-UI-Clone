@@ -1,0 +1,26 @@
+@import "../abstract/_variables.scss";
+
+// buttons
+
+@mixin basic-btn {
+  border-radius: 2px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  font-size: $font-size-16;
+  font-weight: $font-medium;
+}
+
+.btn-1 {
+  @include basic-btn;
+  padding: 5px 40px;
+}
+
+.btn-2 {
+  @include basic-btn;
+  padding: 5px 40px;
+}
+
+.btn-3 {
+  @include basic-btn;
+}
