@@ -3,6 +3,18 @@
 @import "components/_components.scss";
 @import "layout/_layout.scss";
 
-body {
-  font-size: 12px;
+.nav-wrap {
+  background-color: $color-brand-blue;
+  min-width: 978px;
+  width: 100%;
+  height: 56px;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  height: 50px;
+  width: 500px;
+  background-color: white;
 }

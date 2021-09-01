@@ -14,6 +14,7 @@
 .btn-1 {
   @include basic-btn;
   padding: 5px 40px;
+  background-color: $color-white-bg;
 }
 
 .btn-2 {
