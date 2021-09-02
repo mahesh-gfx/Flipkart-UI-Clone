@@ -136,6 +136,7 @@ table {
   height: 32px;
   background-color: transparent;
   border: none;
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   flex: 0 0 auto;
@@ -150,6 +151,7 @@ table {
   height: 32px;
   background-color: transparent;
   border: none;
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   flex: 0 0 auto;
@@ -171,6 +173,7 @@ table {
   justify-content: space-between;
 }
 
+html,
 body {
   font-family: "Roboto";
 }
@@ -255,9 +258,10 @@ body {
   margin: 0 auto;
 }
 
-.product-categories {
-  height: calc(100% - 150px);
+.prod-categories {
+  width: calc(100% - 130px);
   background-color: #fff;
+  margin: 0 auto;
 }
 
 .category {
@@ -265,6 +269,39 @@ body {
   text-align: center;
   cursor: pointer;
   width: fit-content;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.category-img-wrap {
+  height: 64px;
+  width: auto;
+}
+
+.category-img {
+  height: 64px;
+  width: auto;
+}
+
+.svg-arrow {
+  height: 8px;
+  width: 5px;
+  transform: rotate(270deg);
+}
+
+.category-name {
+  padding: 3px 0 0;
+}
+
+.category:hover .category-name,
+.category:hover .svg-arrow-fill {
+  color: #2455f4;
+  fill: #2455f4;
+}
+
+.category:hover .category-name .svg-arrow {
+  transform: rotate(90deg);
+  transition-duration: 0.2s;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,7 @@
 @import "components/_components.scss";
 @import "layout/_layout.scss";
 
+html,
 body {
   font-family: "Roboto";
 }
@@ -87,9 +88,10 @@ body {
   margin: 0 auto;
 }
 
-.product-categories {
-  height: calc(100% - 150px);
+.prod-categories {
+  width: calc(100% - 130px);
   background-color: $color-white-bg;
+  margin: 0 auto;
 }
 
 .category {
@@ -97,4 +99,36 @@ body {
   text-align: center;
   cursor: pointer;
   width: fit-content;
+  font-size: $font-size-14;
+  font-weight: $font-medium;
+}
+
+.category-img-wrap {
+  height: 64px;
+  width: auto;
+}
+
+.category-img {
+  height: 64px;
+  width: auto;
+}
+
+.svg-arrow {
+  height: 8px;
+  width: 5px;
+  transform: rotate(270deg);
+}
+
+.category-name {
+  padding: 3px 0 0;
+}
+.category:hover .category-name,
+.category:hover .svg-arrow-fill {
+  color: $color-brand-bbd;
+  fill: $color-brand-bbd;
+}
+
+.category:hover .category-name .svg-arrow {
+  transform: rotate(90deg);
+  transition-duration: 0.2s;
 }
