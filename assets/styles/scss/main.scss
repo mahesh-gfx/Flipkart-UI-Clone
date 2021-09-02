@@ -3,6 +3,10 @@
 @import "components/_components.scss";
 @import "layout/_layout.scss";
 
+body {
+  font-family: "Roboto";
+}
+
 .nav-wrap {
   background-color: $color-brand-blue;
   width: 100vw;
@@ -36,7 +40,6 @@
 }
 
 .search {
-  margin-right: 30px;
   padding: 0 16px;
 }
 
@@ -52,13 +55,13 @@
 .nav-left,
 .nav-right,
 .logo-wrap {
-  @include height-100;
+  height: 100%;
   @include border-box;
   align-items: center;
 }
 
 .logo-wrap {
-  @include height-100;
+  height: 100%;
   min-width: 137px;
 }
 
@@ -75,4 +78,23 @@
 .cart {
   padding: 0;
   color: $color-white;
+}
+
+.prod-categories-wrap {
+  padding-top: 56px;
+  width: 100vw;
+  background-color: $color-white-bg;
+  margin: 0 auto;
+}
+
+.product-categories {
+  height: calc(100% - 150px);
+  background-color: $color-white-bg;
+}
+
+.category {
+  padding: 12px 8px;
+  text-align: center;
+  cursor: pointer;
+  width: fit-content;
 }

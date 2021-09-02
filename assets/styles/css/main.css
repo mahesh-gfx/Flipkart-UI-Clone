@@ -171,6 +171,10 @@ table {
   justify-content: space-between;
 }
 
+body {
+  font-family: "Roboto";
+}
+
 .nav-wrap {
   background-color: #2874f0;
   width: 100vw;
@@ -204,7 +208,6 @@ table {
 }
 
 .search {
-  margin-right: 30px;
   padding: 0 16px;
 }
 
@@ -243,6 +246,25 @@ table {
 .cart {
   padding: 0;
   color: #f0f0f0;
+}
+
+.prod-categories-wrap {
+  padding-top: 56px;
+  width: 100vw;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.product-categories {
+  height: calc(100% - 150px);
+  background-color: #fff;
+}
+
+.category {
+  padding: 12px 8px;
+  text-align: center;
+  cursor: pointer;
+  width: fit-content;
 }
 
 /*# sourceMappingURL=main.css.map */
