@@ -1,7 +1,6 @@
 @import "../abstract/_variables.scss";
 
 // buttons
-
 @mixin basic-btn {
   border-radius: 2px;
   height: 32px;
@@ -9,6 +8,9 @@
   border: none;
   font-size: $font-size-16;
   font-weight: $font-medium;
+  flex: 0 0 auto;
+  margin: 0 20px;
+  max-width: 150px;
 }
 
 .btn-1 {
@@ -18,10 +20,5 @@
 }
 
 .btn-2 {
-  @include basic-btn;
-  padding: 5px 40px;
-}
-
-.btn-3 {
   @include basic-btn;
 }

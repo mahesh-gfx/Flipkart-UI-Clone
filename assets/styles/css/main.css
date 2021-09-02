@@ -138,6 +138,9 @@ table {
   border: none;
   font-size: 16px;
   font-weight: 500;
+  flex: 0 0 auto;
+  margin: 0 20px;
+  max-width: 150px;
   padding: 5px 40px;
   background-color: #fff;
 }
@@ -149,16 +152,9 @@ table {
   border: none;
   font-size: 16px;
   font-weight: 500;
-  padding: 5px 40px;
-}
-
-.btn-3 {
-  border-radius: 2px;
-  height: 32px;
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  font-weight: 500;
+  flex: 0 0 auto;
+  margin: 0 20px;
+  max-width: 150px;
 }
 
 .row {
@@ -177,18 +173,76 @@ table {
 
 .nav-wrap {
   background-color: #2874f0;
-  min-width: 978px;
-  width: 100%;
+  width: 100vw;
   height: 56px;
   position: fixed;
+  align-items: center;
+}
+
+.nav {
+  min-width: 978px;
+  width: calc(100% - 125px);
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
 
-.search-input {
+.search-box {
   height: 50px;
   width: 500px;
   background-color: white;
+  height: 36px;
+  justify-content: flex-start;
+  margin: 0 auto 0 12px;
+}
+
+.search-input,
+.search {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.search {
+  margin-right: 30px;
+  padding: 0 16px;
+}
+
+.search-icon {
+  padding: 10px 12px 0 8px;
+}
+
+.search-icon svg {
+  height: 20px;
+  width: auto;
+}
+
+.nav-left,
+.nav-right,
+.logo-wrap {
+  height: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.logo-wrap {
+  height: 100%;
+  min-width: 137px;
+}
+
+.logo {
+  width: 75px;
+  height: auto;
+}
+
+.login-btn {
+  color: #2455f4;
+}
+
+.more-btn,
+.cart {
+  padding: 0;
+  color: #f0f0f0;
 }
 
 /*# sourceMappingURL=main.css.map */
