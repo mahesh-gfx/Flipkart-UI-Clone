@@ -15,6 +15,7 @@ body {
   height: 56px;
   position: fixed;
   align-items: center;
+  z-index: 6;
 }
 
 .nav {
@@ -26,26 +27,36 @@ body {
 }
 
 .explore-plus,
-.logo-wrap a {
-  font-style: italic;
-  text-decoration: none;
-  font-size: 11px;
-  margin-top: -1px;
-  color: $color-white;
+.logo-wrap {
+  a {
+    font-style: italic;
+    text-decoration: none;
+    font-size: $font-size-11;
+    margin-top: -1px;
+    color: $color-white;
+  }
 }
 
-.logo-wrap:hover a {
-  text-decoration: underline;
+.logo-wrap:hover {
+  a {
+    text-decoration: underline;
+  }
 }
 
-.logo-wrap a span {
-  color: $color-primary-yellow;
-  font-weight: 500;
+.logo-wrap {
+  a {
+    span {
+      color: $color-primary-yellow;
+      font-weight: 500;
+    }
+  }
 }
 
-a img {
-  height: 10px;
-  width: auto;
+a {
+  img {
+    height: 10px;
+    width: auto;
+  }
 }
 .search-box {
   height: 50px;
@@ -71,9 +82,11 @@ a img {
   padding: 10px 12px 0 8px;
 }
 
-.search-icon svg {
-  height: 20px;
-  width: auto;
+.search-icon {
+  svg {
+    height: 20px;
+    width: auto;
+  }
 }
 
 .nav-left,
@@ -106,7 +119,7 @@ a img {
 
 .prod-categories-wrap {
   padding-top: 56px;
-  width: 100vw;
+  width: 100%;
   background-color: $color-white-bg;
   margin: 0 auto;
 }
@@ -151,9 +164,17 @@ a img {
   fill: $color-brand-bbd;
 }
 
-.category:hover .category-name .svg-arrow {
+.category:hover .category-name .svg-arrow,
+.more-btn:hover .svg-arrow {
   transform: rotate(90deg);
   transition: ease-in-out 0.25s;
+}
+
+.more-btn {
+  .svg-arrow path {
+    fill: $color-white;
+    color: $color-white;
+  }
 }
 
 .main-content-wrapper,
@@ -166,19 +187,19 @@ a img {
   margin: 20px 10px 10px 10px;
 }
 
-.carousel figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 15s slider infinite;
+.carousel {
+  figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+    img {
+      width: 20%;
+      float: left;
+    }
+  }
 }
-
-.carousel figure img {
-  width: 20%;
-  float: left;
-}
-
 @keyframes slider {
   0% {
     left: 0;
@@ -207,4 +228,96 @@ a img {
   100% {
     left: -400%;
   }
+}
+
+.product-slider-wrap {
+  margin: 10px;
+  box-sizing: border-box;
+}
+.product-slider-wrap,
+.product-slider,
+.super-saver {
+  background-color: $color-white-bg;
+  width: 100%;
+}
+.super-saver {
+  max-width: 1065px;
+}
+
+.slider-title {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+
+.title-text {
+  font-size: $font-size-22;
+  font-weight: $font-medium;
+}
+
+.sub-title {
+  font-size: $font-size-14;
+  font-weight: $font-regular;
+  color: $color-grey-grade17;
+}
+
+.view-btn {
+  background-color: $color-brand-blue;
+  color: $color-white;
+  max-width: 150px;
+  padding: 10px 20px;
+  font-size: $font-size-13;
+}
+
+.slider-content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-card {
+  padding: 25px 15px;
+  height: 287px;
+  width: 100%;
+  max-width: 195px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-size: $font-size-14;
+}
+
+.card-img-wrap {
+  height: 150px;
+  width: auto;
+  margin: auto;
+}
+
+.card-img-wrap {
+  height: auto;
+  width: auto;
+}
+
+.card-info {
+  text-align: center;
+  margin-top: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prod-name {
+  font-weight: $font-medium;
+}
+
+.prod-price,
+.prod-keywords,
+.sub-title {
+  font-weight: $font-regular;
+  padding-top: 7px;
+}
+
+.prod-price {
+  color: $color-supermart-green;
+}
+
+.prod-keywords {
+  color: $color-grey-grade17;
 }
