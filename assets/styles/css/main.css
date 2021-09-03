@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
 html,
 body,
 div,
@@ -194,13 +195,36 @@ body {
   align-items: center;
 }
 
+.explore-plus,
+.logo-wrap a {
+  font-style: italic;
+  text-decoration: none;
+  font-size: 11px;
+  margin-top: -1px;
+  color: #f0f0f0;
+}
+
+.logo-wrap:hover a {
+  text-decoration: underline;
+}
+
+.logo-wrap a span {
+  color: #ffe11b;
+  font-weight: 500;
+}
+
+a img {
+  height: 10px;
+  width: auto;
+}
+
 .search-box {
   height: 50px;
-  width: 500px;
+  width: 560px;
   background-color: white;
   height: 36px;
   justify-content: flex-start;
-  margin: 0 auto 0 12px;
+  margin: 0 50px 0 12px;
 }
 
 .search-input,
@@ -233,7 +257,7 @@ body {
 
 .logo-wrap {
   height: 100%;
-  min-width: 137px;
+  min-width: 80px;
 }
 
 .logo {
@@ -301,7 +325,61 @@ body {
 
 .category:hover .category-name .svg-arrow {
   transform: rotate(90deg);
-  transition-duration: 0.2s;
+  transition: ease-in-out 0.25s;
+}
+
+.main-content-wrapper,
+.main-content,
+.carousel {
+  background-color: #f1f3f6;
+  overflow: hidden;
+}
+
+.carousel {
+  margin: 20px 10px 10px 10px;
+}
+
+.carousel figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 15s slider infinite;
+}
+
+.carousel figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
