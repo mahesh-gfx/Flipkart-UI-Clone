@@ -233,8 +233,9 @@ a {
 .product-slider-wrap {
   margin: 10px;
   box-sizing: border-box;
+  max-height: 370px;
 }
-.product-slider-wrap,
+
 .product-slider,
 .super-saver {
   background-color: $color-white-bg;
@@ -320,4 +321,46 @@ a {
 
 .prod-keywords {
   color: $color-grey-grade17;
+  background-color: $color-white-bg;
+}
+.ad-card {
+  padding: 4px;
+  .ad-img {
+    height: 100%;
+    padding: 0px 0px 10px 10px;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+.offers-wrap {
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  a {
+    img {
+      max-height: 235px;
+      height: 100%;
+    }
+  }
+}
+
+.slider-card:hover {
+  cursor: pointer;
+  .card-img-wrap {
+    position: relative;
+    transform: scale(1.05);
+    transition: 0.1s;
+  }
+}
+
+.brand-directory-wrap {
+  padding: 25px;
+}
+
+.brand-directory-title {
+  padding: 14px 0;
+  margin-top: 14px;
 }

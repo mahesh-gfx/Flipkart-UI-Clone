@@ -117,14 +117,12 @@ q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after {
+blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-q:before,
-q:after {
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -394,9 +392,9 @@ a img {
 .product-slider-wrap {
   margin: 10px;
   box-sizing: border-box;
+  max-height: 370px;
 }
 
-.product-slider-wrap,
 .product-slider,
 .super-saver {
   background-color: #fff;
@@ -474,7 +472,7 @@ a img {
 .prod-keywords,
 .sub-title {
   font-weight: 400;
-  padding-top: 8px;
+  padding-top: 7px;
 }
 
 .prod-price {
@@ -483,6 +481,47 @@ a img {
 
 .prod-keywords {
   color: #9b9b9b;
+  background-color: #fff;
+}
+
+.ad-card {
+  padding: 4px;
+}
+.ad-card .ad-img {
+  height: 100%;
+  padding: 0px 0px 10px 10px;
+}
+.ad-card .ad-img img {
+  height: 100%;
+  width: auto;
+}
+
+.offers-wrap {
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+}
+.offers-wrap a img {
+  max-height: 235px;
+  height: 100%;
+}
+
+.slider-card:hover {
+  cursor: pointer;
+}
+.slider-card:hover .card-img-wrap {
+  position: relative;
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+
+.brand-directory-wrap {
+  padding: 25px;
+}
+
+.brand-directory-title {
+  padding: 14px 0;
+  margin-top: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */
