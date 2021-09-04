@@ -522,12 +522,68 @@ a img {
 }
 
 .brand-directory-wrap {
+  background-color: #fff;
   padding: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 50px;
 }
-
-.brand-directory-title {
+.brand-directory-wrap .brand-directory-title {
   padding: 14px 0;
   margin-top: 14px;
+}
+.brand-directory-wrap .brand-directory-title span {
+  font-weight: 500;
+  color: #666;
+  padding-right: 5px;
+}
+.brand-directory-wrap .brand-directory-title span:nth-child(2) {
+  color: #3f3f3f;
+}
+.brand-directory-wrap .brand-directory-content div span {
+  color: #666;
+}
+.brand-directory-wrap .brand-directory-content div a {
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0px 5px;
+  border-right: 1px solid #333333;
+  color: #3f3f3f;
+}
+.brand-directory-wrap .brand-directory-content div a:last-child {
+  border: none;
+}
+
+.flipkart-info-wrap {
+  background-color: #fff;
+  padding: 25px;
+}
+.flipkart-info-wrap .flipkart-info {
+  font-size: 11px;
+  line-height: 16px;
+  color: #878787;
+}
+
+h1,
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+.footer-wrap {
+  background-color: #172337;
+}
+.footer-wrap .footer-wrap {
+  margin-left: 65px;
+  padding-top: 40px;
+  width: 90%;
 }
 
 /*# sourceMappingURL=main.css.map */
