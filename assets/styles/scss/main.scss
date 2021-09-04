@@ -424,9 +424,74 @@ h2 {
 
 .footer-wrap {
   background-color: $color-brand-footer;
-  .footer-wrap {
+  font-size: $font-size-12;
+  font-weight: $font-regular;
+  line-height: 18px;
+  .footer {
     margin-left: 65px;
     padding-top: 40px;
     width: 90%;
+    .links {
+      width: 171px;
+      div {
+        color: $color-grey-grade4;
+        margin-bottom: 9px;
+      }
+      a {
+        text-decoration: none;
+        color: $color-white-bg;
+        height: 24px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    .address-wrap {
+      .address {
+        padding: 0 25px;
+        width: 230px;
+        .address-type {
+          color: $color-grey-grade4;
+        }
+        div {
+          margin-bottom: 9px;
+          color: $color-white-bg;
+        }
+      }
+      .address:first-child {
+        border-left: 1px solid rgb(69, 77, 94);
+      }
+    }
   }
+  .footer-bottom {
+    border-top: 1px solid rgb(51, 51, 51);
+    margin-top: 40px;
+    padding: 25px 65px;
+    a,
+    p {
+      text-decoration: none;
+      color: $color-white-bg;
+      font-size: $font-size-14;
+      font-weight: $font-regular;
+      p {
+        padding-left: 7px;
+      }
+    }
+  }
+}
+
+.tel {
+  text-decoration: none;
+  color: $color-brand-blue;
+  font-weight: $font-medium;
+}
+
+.icon-svg {
+  height: 15px;
+  width: auto;
+}
+
+.icon-svg-1 {
+  height: 18px;
+  width: auto;
 }
