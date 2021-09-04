@@ -495,3 +495,214 @@ h2 {
   height: 18px;
   width: auto;
 }
+.drop {
+  position: relative;
+  height: 56px;
+  align-items: center;
+  display: flex;
+}
+
+.drop-content {
+  background-color: $color-white-bg;
+  display: none;
+  width: 240px;
+
+  .top-arrow {
+    position: absolute;
+    left: 45%;
+    top: -13px;
+    svg {
+      transform: scale(0.7);
+    }
+  }
+  .top-arrow::after {
+    content: "";
+    border-bottom-color: rgb(240, 240, 240);
+    border-width: 10px;
+  }
+  .menu-item {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: $font-size-14;
+  }
+
+  .sign-up-menu {
+    font-weight: $font-medium;
+    a {
+      text-decoration: none;
+      color: $color-brand-blue;
+    }
+  }
+  .menu-item:hover {
+    background: $color-white;
+  }
+}
+
+.drop:hover .drop-content {
+  display: block;
+  position: absolute;
+  top: 55px;
+  box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+}
+
+.drop-content {
+  left: -40px;
+}
+
+.more-wrap .drop-content {
+  left: -80px;
+}
+
+.login-dialog {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.336);
+  display: none;
+}
+
+.login-wrap:focus .login-dialog {
+  display: block;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.486); /* Black w/ opacity */
+  display: flex;
+  flex-direction: row;
+}
+
+/* Modal Content */
+.modal-content {
+  width: 650px;
+  height: 500px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin: 0px auto;
+  position: relative;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 5px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-gfx {
+  width: 200px;
+  height: 420px;
+  padding: 40px 33px;
+  background-color: $color-brand-blue;
+  .login-txt {
+    color: $color-grey-grade2;
+    font-weight: $font-regular;
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      padding-top: 20px;
+    }
+    p:first-child {
+      font-size: 28px;
+      font-weight: 500;
+      color: white;
+    }
+  }
+}
+
+.login-form {
+  width: 450px;
+  height: 420px;
+  padding: 56px 35px 16px;
+  background-color: white;
+  box-sizing: border-box;
+  font-weight: $font-medium;
+  form {
+    label {
+      border-bottom: 1px solid $color-grey-grade4;
+      width: 100%;
+      input {
+        padding: 8px 30px 10px 0px;
+        outline: none;
+        border: none;
+        font-size: $font-size-16;
+      }
+      a {
+        text-decoration: none;
+        color: $color-brand-blue;
+        padding: 8px 0 10px 0;
+      }
+    }
+
+    .pass {
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: $font-size-12;
+      line-height: 17px;
+      padding-top: 20px;
+      font-weight: $font-regular;
+      color: $color-grey-grade14;
+      a {
+        text-decoration: none;
+        color: $color-brand-blue;
+      }
+    }
+    .modal-login-btn {
+      padding: 10px 20px;
+      width: 100%;
+      background-color: $color-brand-orange;
+      color: white;
+      border: none;
+      outline: none;
+      font-size: $font-size-16;
+      font-weight: $font-medium;
+      margin-top: 10px;
+    }
+
+    .otp {
+      padding: 10px 20px;
+      width: 100%;
+      background-color: white;
+      color: $color-brand-blue;
+      border: none;
+      outline: none;
+      font-size: $font-size-16;
+      font-weight: $font-medium;
+      margin-top: 10px;
+      box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+      -webkit-box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+      -moz-box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+      margin-bottom: 50px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
+.new-to-flipkart {
+  text-decoration: none;
+  color: $color-brand-blue;
+}

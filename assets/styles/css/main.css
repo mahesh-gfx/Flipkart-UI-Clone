@@ -650,4 +650,218 @@ h2 {
   width: auto;
 }
 
+.drop {
+  position: relative;
+  height: 56px;
+  align-items: center;
+  display: flex;
+}
+
+.drop-content {
+  background-color: #fff;
+  display: none;
+  width: 240px;
+}
+.drop-content .top-arrow {
+  position: absolute;
+  left: 45%;
+  top: -13px;
+}
+.drop-content .top-arrow svg {
+  transform: scale(0.7);
+}
+.drop-content .top-arrow::after {
+  content: "";
+  border-bottom-color: #f0f0f0;
+  border-width: 10px;
+}
+.drop-content .menu-item {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+.drop-content .sign-up-menu {
+  font-weight: 500;
+}
+.drop-content .sign-up-menu a {
+  text-decoration: none;
+  color: #2874f0;
+}
+.drop-content .menu-item:hover {
+  background: #f0f0f0;
+}
+
+.drop:hover .drop-content {
+  display: block;
+  position: absolute;
+  top: 55px;
+  box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+}
+
+.drop-content {
+  left: -40px;
+}
+
+.more-wrap .drop-content {
+  left: -80px;
+}
+
+.login-dialog {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.336);
+  display: none;
+}
+
+.login-wrap:focus .login-dialog {
+  display: block;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 10;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  /* Full width */
+  height: 100vh;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.486);
+  /* Black w/ opacity */
+  display: flex;
+  flex-direction: row;
+}
+
+/* Modal Content */
+.modal-content {
+  width: 650px;
+  height: 500px;
+  background: white;
+  border-radius: 4px;
+  margin: 0px auto;
+  position: relative;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 5px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-gfx {
+  width: 200px;
+  height: 420px;
+  padding: 40px 33px;
+  background-color: #2874f0;
+}
+.login-gfx .login-txt {
+  color: #e0e0e0;
+  font-weight: 400;
+}
+.login-gfx .login-txt p {
+  font-size: 18px;
+  line-height: 27px;
+  padding-top: 20px;
+}
+.login-gfx .login-txt p:first-child {
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+}
+
+.login-form {
+  width: 450px;
+  height: 420px;
+  padding: 56px 35px 16px;
+  background-color: white;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+.login-form form label {
+  border-bottom: 1px solid #878787;
+  width: 100%;
+}
+.login-form form label input {
+  padding: 8px 30px 10px 0px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+.login-form form label a {
+  text-decoration: none;
+  color: #2874f0;
+  padding: 8px 0 10px 0;
+}
+.login-form form .pass {
+  margin-top: 30px;
+}
+.login-form form p {
+  font-size: 12px;
+  line-height: 17px;
+  padding-top: 20px;
+  font-weight: 400;
+  color: #666;
+}
+.login-form form p a {
+  text-decoration: none;
+  color: #2874f0;
+}
+.login-form form .modal-login-btn {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #fb641b;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.login-form form .otp {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: white;
+  color: #2874f0;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.37);
+  margin-bottom: 50px;
+}
+.login-form form p {
+  text-align: center;
+}
+
+.new-to-flipkart {
+  text-decoration: none;
+  color: #2874f0;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -10,6 +10,39 @@
 </head>
 
 <body>
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content row">
+      <span class="close">&times;</span>
+      <div class="login-gfx col space-between">
+        <div class="login-txt">
+          <p>Login</p>
+          <p>Get access to your Orders, Wishlist and Recommendations</p>
+        </div>
+        <img src="assets/img/png/login.png" alt="">
+      </div>
+      <div class="login-form">
+        <form action="">
+          <label for="email" class="row">
+            <input type="text" name="email" placeholder="Enter Email/Mobile Number">
+          </label>
+          <label for="pass" class="row pass">
+            <input type="password" placeholder="Password">
+            <a href="">Forgot?</a>
+          </label>
+          <p>By continuing, you agree to Flipkart's <a href="">Terms of Use</a> and <a href="">Privacy Policy.</a></p>
+
+          <button class="modal-login-btn">Login</button>
+          <p>OR</p>
+          <button class="otp">Request OTP</button>
+
+          <a href="" class="new-to-flipkart">New to Flipkart? Create an account</a>
+        </form>
+      </div>
+    </div>
+
+  </div>
   <div class="nav-wrap row">
     <div class="nav row">
       <div class="nav-left row">
@@ -38,13 +71,47 @@
         </div>
       </div>
       <div class="nav-right row">
-        <div class="login-wrap">
-          <button class="btn-1 login-btn">
+        <div class="login-wrap drop">
+          <button class="btn-1 login-btn" id="login-btn">
             Login
           </button>
+          <div class="login-dialog">
+
+          </div>
+          <div class="drop-content col">
+            <div class="top-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33px"
+                height="19px">
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                  d="M16.500,-0.000 L33.000,19.000 L0.000,19.000 L16.500,-0.000 Z" />
+              </svg>
+            </div>
+            <div class="menu-item sign-up-menu row space-between">
+              <p>New Customer?</p>
+              <a href="">Sign Up</a>
+            </div>
+            <div class="menu-item">
+              <p>My Profile</p>
+            </div>
+            <div class="menu-item">
+              <p>Flipkart Plus Zone</p>
+            </div>
+            <div class="menu-item">
+              <p>Orders</p>
+            </div>
+            <div class="menu-item">
+              <p>Wishlist</p>
+            </div>
+            <div class="menu-item">
+              <p>Rewards</p>
+            </div>
+            <div class="menu-item">
+              <p>Gift Cards</p>
+            </div>
+          </div>
         </div>
 
-        <div class="more-wrap">
+        <div class="more-wrap drop">
           <button class="btn-2 more-btn">More &nbsp;<svg width="5" height="8" viewBox="0 0 16 27" class="svg-arrow"
               xmlns="http://www.w3.org/2000/svg">
               <path class="svg-arrow-fill" d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
@@ -52,6 +119,30 @@
               </path>
             </svg>
           </button>
+          <div class="drop-content col">
+            <div class="top-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33px"
+                height="19px">
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                  d="M16.500,-0.000 L33.000,19.000 L0.000,19.000 L16.500,-0.000 Z" />
+              </svg>
+            </div>
+            <div class="menu-item">
+              <p>Notification Preferences</p>
+            </div>
+            <div class="menu-item">
+              <p>Sell on Flipkart</p>
+            </div>
+            <div class="menu-item">
+              <p>24x7 Customer Care</p>
+            </div>
+            <div class="menu-item">
+              <p>Advertise</p>
+            </div>
+            <div class="menu-item">
+              <p>Download App</p>
+            </div>
+          </div>
         </div>
 
         <button class="btn-2 cart">
@@ -1448,6 +1539,7 @@
       </svg>
     </div>
   </div>
+  <script src="assets/script/app.js"></script>
 </body>
 
 </html>
