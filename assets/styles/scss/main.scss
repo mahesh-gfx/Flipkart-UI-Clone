@@ -506,6 +506,7 @@ h2 {
   background-color: $color-white-bg;
   display: none;
   width: 240px;
+  z-index: 11;
 
   .top-arrow {
     position: absolute;
@@ -553,6 +554,11 @@ h2 {
 
 .more-wrap .drop-content {
   left: -80px;
+}
+
+.fashion .drop-content {
+  left: -80px;
+  margin-top: 50px;
 }
 
 .login-dialog {

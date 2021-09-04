@@ -661,6 +661,7 @@ h2 {
   background-color: #fff;
   display: none;
   width: 240px;
+  z-index: 11;
 }
 .drop-content .top-arrow {
   position: absolute;
@@ -706,6 +707,11 @@ h2 {
 
 .more-wrap .drop-content {
   left: -80px;
+}
+
+.fashion .drop-content {
+  left: -80px;
+  margin-top: 50px;
 }
 
 .login-dialog {
