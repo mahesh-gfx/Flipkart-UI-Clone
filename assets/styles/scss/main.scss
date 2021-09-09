@@ -16,14 +16,13 @@ body {
   position: fixed;
   align-items: center;
   z-index: 6;
-}
-
-.nav {
-  min-width: 978px;
-  width: calc(100% - 125px);
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
+  .nav {
+    min-width: 978px;
+    width: calc(100% - 125px);
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .explore-plus,
@@ -70,7 +69,7 @@ a {
 
 .search-input,
 .search {
-  @include width-100;
+  @extend %width-100;
   outline: none;
   border: none;
 }
@@ -94,7 +93,7 @@ a {
 .nav-right,
 .logo-wrap {
   height: 100%;
-  @include border-box;
+  @extend %border-box;
   align-items: center;
 }
 

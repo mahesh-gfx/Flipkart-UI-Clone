@@ -176,6 +176,17 @@ table {
   justify-content: space-between;
 }
 
+.search-input,
+.search {
+  width: 100%;
+}
+
+.nav-left,
+.nav-right,
+.logo-wrap {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: "Roboto";
@@ -189,8 +200,7 @@ body {
   align-items: center;
   z-index: 6;
 }
-
-.nav {
+.nav-wrap .nav {
   min-width: 978px;
   width: calc(100% - 125px);
   margin: 0 auto;
@@ -233,7 +243,6 @@ a img {
 
 .search-input,
 .search {
-  width: 100%;
   outline: none;
   border: none;
 }
@@ -255,7 +264,6 @@ a img {
 .nav-right,
 .logo-wrap {
   height: 100%;
-  box-sizing: border-box;
   align-items: center;
 }
 
