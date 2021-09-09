@@ -65,6 +65,7 @@ a {
   height: 36px;
   justify-content: flex-start;
   margin: 0 50px 0 12px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
 }
 
 .search-input,
@@ -120,14 +121,13 @@ a {
 .prod-categories-wrap {
   padding-top: 56px;
   width: 100%;
-  background-color: $color-white-bg;
-  margin: 0 auto;
-}
 
-.prod-categories {
-  width: calc(100% - 130px);
-  background-color: $color-white-bg;
-  margin: 0 auto;
+  .prod-categories {
+    width: calc(100% - 130px);
+    background-color: $color-white-bg;
+    margin: 0 auto;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+  }
 }
 
 .category {
@@ -246,6 +246,7 @@ a {
 .super-saver {
   background-color: $color-white-bg;
   width: 100%;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
 }
 .super-saver {
   max-width: 1065px;
@@ -330,10 +331,13 @@ a {
   background-color: $color-white-bg;
 }
 .ad-card {
+  margin-left: 10px;
   padding: 4px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+  background-color: $color-white-bg;
   .ad-img {
     height: 100%;
-    padding: 0px 0px 10px 10px;
+    width: fit-content;
     img {
       height: 100%;
       width: auto;
